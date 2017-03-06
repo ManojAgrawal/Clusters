@@ -23,6 +23,8 @@ CustomerOffers[is.na(CustomerOffers)] <- 0
 CustomerDat <- CustomerOffers[,-(1:7)]
 CustomerDat.t <- t(CustomerDat)
 
+print(CustomerDat.t)
+
 # Setup for k-means loop 
 km.out <- list()
 sil.out <- list()
